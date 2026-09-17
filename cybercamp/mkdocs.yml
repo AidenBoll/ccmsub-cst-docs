@@ -1,0 +1,22 @@
+site_name: Cyber Camp
+
+nav:
+  - Home: index.md
+  - Sketchpad: test.md
+  - Setup:
+    - ./setup/index.md
+    - File A: ./setup/fileA.md
+    - File B: ./setup/fileB.md
+  - Topics: topics.md
+  - Resources: resources.md
+
+theme:
+  name: readthedocs
+  custom_dir: 'custom_theme/'
+
+extra_css:
+  - global-styles.css
+
+# plugins:
+#   - search
+#   - awesome-nav
