@@ -1,17 +1,5 @@
 # Cyber Camp
----
 
-## [Setup](./setup/index.md)
-*Description*
-<br><br>   
+Cyber Camp documentation home.
 
-## [Topics](topics.md)
-*Description*
- <br><br>  
-
-## [Resources](resources.md)
-*Description*
-
-<style>h2 { color: red; }</style>
-
----
+Use the navigation panel to find stuff.

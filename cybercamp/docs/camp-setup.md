@@ -1,5 +1,5 @@
 # Setup
----
+
 ## Linux image
 
 Installed software
@@ -15,15 +15,8 @@ Setup document
 Image file  
 *link to image*
 
----
+## Calendars
 
-## Calendar
+[Intro to Cyber camp calendar](./resources/intro-cybercamp-calendar.pdf)
 
-Introduction to Cybersecurity camp  
-*link to document (PDF)*
-
-Advanced Cybersecurity camp  
-*link to document (PDF)*
-
-
----
+[Advanced Cyber camp calendar](./resources/advanced-cybercamp-calendar.pdf)

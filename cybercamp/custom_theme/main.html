@@ -1,34 +1,50 @@
 {% extends "base.html" %}
 
-{%- block site_nav %}
-  {%- set navlevel = 1 %}
-  {%- for nav_item in nav %}
+{% block site_nav %}
+
+{%- set navlevel = 1 %}
+{%- for nav_item in nav %}
     {%- if nav_item.is_section %}
-      {%- if nav_item.is_page %}
-        <ul>
-          <li{% if nav_item==page %} class="current-section" {% endif %}>
-            <a href="{% if nav_item == page %}#{% else %}{{ nav_item.url|url }}{% endif %}"
-              style="padding: 0; font-size: inherit; line-height: inherit">
-              {%- endif %}
-              <p class="caption"><span class="caption-text">{{ nav_item.title }}</span></p>
-              {%- if nav_item.is_page %}
+        {%- if nav_item.is_page %}
+            <ul><li{% if nav_item == page %} class="current-section"{% endif %}>
+            <a href="{% if nav_item == page %}#{% else %}{{ nav_item.url|url }}{% endif %}" style="padding: 0; font-size: inherit; line-height: inherit">
+        {%- endif %}
+        <p class="caption"><span class="caption-text">{{ nav_item.title }}</span></p>
+    {%- if nav_item.is_page %}
             </a>
-          </li>
-        </ul>
-      {%- endif %}
-      <ul{% if nav_item.active %} class="current" {% endif %}>
-        {%- for nav_item in nav_item.children %}
-          <li class="toctree-l{{ navlevel }}{% if nav_item.active %} current{% endif %}">
-            {%- include 'nav.html' %}
-          </li>
-        {%- endfor %}
-      </ul>
-    {%- elif config.theme.include_homepage_in_sidebar or (not nav_item == nav.homepage) %}
-      <ul{% if nav_item.active %} class="current" {% endif %}>
-        <li class="toctree-l{{ navlevel }}{% if nav_item.active %} current{% endif %}">
-          {%- include 'nav.html' %}
-        </li>
-      </ul>
+            </li></ul>
     {%- endif %}
-  {%- endfor %}
+        <ul class="current">
+        {%- for nav_item in nav_item.children %}
+            <li class="toctree-l{{ navlevel }} current">
+            {%- include 'nav.html' %}
+            </li>
+        {%- endfor %}
+        </ul>
+    {%- elif config.theme.include_homepage_in_sidebar or (not nav_item == nav.homepage) %}
+        <ul class="current">
+        <li class="toctree-l{{ navlevel }} current">
+            {%- include 'nav.html' %}
+        </li>
+        </ul>
+    {%- endif %}
+{%- endfor %}
+
+{% endblock %}
+
+
+
+{%- block scripts %}
+    <script src="{{ 'js/jquery-3.6.0.min.js'|url }}"></script>
+    <script>var base_url = {{ base_url|tojson }};</script>
+    <script src="{{ 'js/theme_extra.js'|url }}"></script>
+    <script src="{{ 'js/theme.js'|url }}"></script>
+    {%- for script in config.extra_javascript %}
+      {{ script|script_tag }}
+    {%- endfor %}
+    <!-- <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable({{ 'true' if config.theme.sticky_navigation else 'false' }});
+        });
+    </script> -->
 {%- endblock %}

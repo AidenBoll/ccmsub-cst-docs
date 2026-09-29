@@ -1,8 +1,6 @@
 # Topics
----
-## Linux
 
-[Curriculum](./topics/linux-curriculum.md)  
+## [Linux](./curriculum/linux.md)
 
 Hardware/Software
 
@@ -10,62 +8,61 @@ Hardware/Software
 - *item*
 - *item*
 
-[Examples](./topics/linux-examples.md)  
+### Examples
 
----
+[BASH Scripts](./activities/bash.md)
 
-## Python
 
-[Curriculum](./topics/python-curriculum.md)
 
-Hardware/Software
+## [Python](./curriculum/python.md)
 
-- *item*
-- *item*
-- *item*
+Generic notes go here
 
-[Examples](./topics/python-examples.md)
+### Examples
 
----
+[Turtle Art Code](./activities/turtle-art.md)
 
-## IoT (Internet of Things)
+[Python Miscellanea](./activities/python.md)
 
-[Curriculum](./topics/iot-curriculum.md)
+[Adventure Game Code](./activities/adventure-game.md)
 
-Hardware/Software
+[RPi Pico Scripts](./activities/pico.md)
 
-- *item*
-- *item*
-- *item*
 
-[Examples](./topics/iot-examples.md)
 
----
 
-## Cybersecurity
+## [IoT (Internet of Things)](./curriculum/iot.md)
 
-[Curriculum](./topics/cybersecurity-curriculum.md)
+Generic notes go here
 
-Hardware/Software
+### Examples
 
-- *item*
-- *item*
-- *item*
+[Packet Tracer](./activities/pt.md)
 
-[Examples](./topics/cybersecurity-examples.md)
+[RPi Demos & Scripts](./activities/rpi.md)
 
----
+[IoT Hardware Kits](./activities/iot-hardware-kits.md)
 
-## *Topic*
+[RPi Pico Scripts](./activities/pico.md)
 
-*[Curriculum](./topics/example-topic-curriculum.md)*
+[Arduino Nano Scripts](./activities/nano.md)
 
-*Hardware/Software*
 
-- *item*
-- *item*
-- *item*
 
-*[Examples](./topics/example-topic-examples.md)*
+## [Cybersecurity](./curriculum/cybersecurity.md)
 
----
+Generic notes go here
+
+### Examples
+
+
+
+## Fun & Games
+
+Game-ish things that don't fit with a particular topic.
+
+### Examples
+
+[Twine Examples](./activities/twine.md)
+
+[Sonic Pi Code](./activities/sonic-pi.md)
