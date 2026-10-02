@@ -1,0 +1,27 @@
+site_name: My Docs Site
+
+
+theme:
+  name: readthedocs
+  custom_dir: custom_theme/
+
+
+
+nav:
+  - camp-setup.md
+  - topics.md
+  - Activities:
+    - activities/bash.md
+    
+    - activities/turtle-art.md
+    - activities/python.md
+    - activities/adventure-game.md
+    
+    - activities/iot-hardware-kits.md
+    - activities/rpi.md
+    - activities/pico.md
+    - activities/nano.md
+    - activities/pt.md
+
+    - activities/twine.md
+    - activities/sonic-pi.md

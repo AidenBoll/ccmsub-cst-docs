@@ -1,0 +1,101 @@
+:root {
+    --white-text: #fcfcfc;
+    --primary1: #15356d;
+    --secondary: #f0b310;
+    --tertiary1: #435969;
+    --tertiary2: #b0bdcc;
+    --black: #000000;
+}
+
+/* Hide house icon next to site home link */
+.fa-home::before, .icon-home::before {
+  content: "";
+}
+
+/* Condense paragraphs a bit */
+p {
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+/* Add <hr>-looking lines over each subheader by default */
+hr {
+    border-color: var(--tertiary2);
+}
+h2 {
+    margin-top: 24px;
+    border-top: 1px solid var(--tertiary2);
+    padding-top: 24px;
+}
+
+footer {
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.wy-nav-side {
+    background-color: var(--tertiary1);
+}
+
+.wy-side-nav-search {
+    background-color: var(--primary1);
+}
+
+.wy-menu-vertical {
+
+    /* Reset the left-indent on all nav elements. Will override later. */
+    * {
+        padding-left: 0 !important;
+    }
+
+    /* Do not hide (collapse) lists that lack the .current class. */
+    li ul {
+        display: block !important;
+    }
+
+    p.caption {
+        color: var(--secondary);
+        font-size: 1em;
+    }
+
+    /* Make top-level items slightly larger than normal text. */
+    &, .toctree-l1, .caption {
+        font-size: 1.1rem;
+    }
+
+    /* This will recursively indent each level of the navigation structure,
+    and the actual indent amount is relative to the level of the nav item.
+    Also indents captions, but they don't recurse. */
+    [class*="toctree"], .caption {
+        padding-left: 1.5em !important;
+    }
+
+    /* Make each toctree level be smaller than the last.
+    But don't shrink the top-level; leave that one at its initial value. */
+    [class*="toctree"]:not(.toctree-l1) {
+        font-size: 0.9em;
+    }
+    
+    a {
+        border: none !important;
+        font-size: 1em;
+    }
+
+    li, a {
+        color: var(--white-text) !important; 
+    }
+
+    /* Hover and focus states for navigation panel. */
+    a:hover {
+        text-decoration: underline;
+        background-color: transparent;
+    }
+    a:focus-visible{
+        text-decoration: underline;
+        text-transform: uppercase;
+        outline: none;
+    }
+}
