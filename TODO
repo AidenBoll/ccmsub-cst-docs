@@ -1,0 +1,9 @@
+server.md:354
+
+Discuss Paper server `config/` options?
+
+Add a couple client-side mods and server-side mods to demonstrate the
+difference.
+- Client only: Fabric API + Bundles Beyond
+- Client && Server: Ecologics, Waystones?
+  - I need to figure out how client+server mods *actually* work.

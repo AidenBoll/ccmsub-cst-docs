@@ -1,4 +1,4 @@
-site_name: My Docs Site
+site_name: Cyber Camp
 
 
 theme:
@@ -10,6 +10,8 @@ theme:
 nav:
   - camp-setup.md
   - topics.md
+  - Minecraft:
+    - minecraft/server.md
   - Activities:
     - activities/bash.md
     

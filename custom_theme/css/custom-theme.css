@@ -8,8 +8,9 @@
 }
 
 /* Hide house icon next to site home link */
-.fa-home::before, .icon-home::before {
-  content: "";
+.fa-home::before,
+.icon-home::before {
+    content: "";
 }
 
 /* Condense paragraphs a bit */
@@ -22,6 +23,7 @@ p {
 hr {
     border-color: var(--tertiary2);
 }
+
 h2 {
     margin-top: 24px;
     border-top: 1px solid var(--tertiary2);
@@ -62,14 +64,17 @@ footer {
     }
 
     /* Make top-level items slightly larger than normal text. */
-    &, .toctree-l1, .caption {
+    &,
+    .toctree-l1,
+    .caption {
         font-size: 1.1rem;
     }
 
     /* This will recursively indent each level of the navigation structure,
     and the actual indent amount is relative to the level of the nav item.
     Also indents captions, but they don't recurse. */
-    [class*="toctree"], .caption {
+    [class*="toctree"],
+    .caption {
         padding-left: 1.5em !important;
     }
 
@@ -78,14 +83,15 @@ footer {
     [class*="toctree"]:not(.toctree-l1) {
         font-size: 0.9em;
     }
-    
+
     a {
         border: none !important;
         font-size: 1em;
     }
 
-    li, a {
-        color: var(--white-text) !important; 
+    li,
+    a {
+        color: var(--white-text) !important;
     }
 
     /* Hover and focus states for navigation panel. */
@@ -93,9 +99,22 @@ footer {
         text-decoration: underline;
         background-color: transparent;
     }
-    a:focus-visible{
+
+    a:focus-visible {
         text-decoration: underline;
         text-transform: uppercase;
         outline: none;
+    }
+}
+
+blockquote {
+    margin: revert;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border: 1px solid #e1e4e5;
+    border-radius: 0.5rem;
+
+    > p:last-child {
+        margin-bottom: 0;
     }
 }
