@@ -8,6 +8,7 @@ theme:
 
 
 nav:
+  - bosgame.md
   - camp-setup.md
   - topics.md
   - Minecraft:
